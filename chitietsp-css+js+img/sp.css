@@ -1,0 +1,77 @@
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.ctsp{
+    margin-top: 200px;
+    text-align: center;
+    color:#130f40;
+}
+.ctsp span{
+    background: rgb(38, 186, 38);
+    color:#fff;
+    padding: .5rem 3rem;
+    display: inline-block;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0 100%,7% 50%,0% 0%);
+}
+.sct{
+margin: auto;
+margin-top: 30px;
+width: 80%;
+height: 510px;
+background:#f5f5f5;
+padding: 20px;
+display: flex;
+justify-content: space-around;
+margin-bottom: 50px;
+}
+section .item{
+width:12%;
+height: 100%;
+}
+section .item img{
+width: 80%;
+height: 60px;
+opacity: 0.8;
+margin: 10px auto;
+cursor: pointer;
+}
+section .item img.active{
+opacity: 1;
+border: 2px solid #dbeae3;
+}
+section.main{
+width: 80%;
+height: 100%;
+}
+section .details{
+width: 70%;
+height: 100%;
+text-align: justify;
+}
+.cau{
+margin: 15px;
+}
+.daucham{
+    margin: 5px;
+    margin-left: 30px;
+    }
+.btt{
+padding: 10px 20px;
+background: rgb(38, 186, 38);
+font-weight: bold;
+color: white;
+border: none;
+outline: none;
+cursor: pointer;
+margin-left: 30px;
+border-radius: 50px;
+}
+.btt:hover{
+    
+    padding: 10px 20px;
+    background: orange;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

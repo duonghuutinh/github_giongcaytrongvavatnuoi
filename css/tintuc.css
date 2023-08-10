@@ -1,0 +1,39 @@
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.baoquat{
+    padding-top: 180px;
+}
+.tintuc{
+    line-height: 27px;
+    font-size: 25px;
+    font-weight: 2%;
+    background:rgb(38, 186,38) ;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    margin: 20px ;
+    margin-left: 43%;
+    padding-top: 5px;
+}
+.demuc a{ 
+    text-decoration: none;
+    color: rgb(38, 186,38) ;
+}
+.demuc{ 
+    font-size: 16px;
+    margin: 5px;
+}
+.demuc a:hover{
+    color: red ;
+}
+.last{
+    margin-bottom: 30px;
+}
+.avt:hover{
+    width: 260px;
+    border: 3px solid   rgb(4, 155, 67);
+}

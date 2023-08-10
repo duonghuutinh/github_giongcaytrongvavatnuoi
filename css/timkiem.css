@@ -1,0 +1,22 @@
+h1{
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 30%;
+    background:rgb(38, 186,38) ;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+     margin-top: 200px;
+     margin-left: 45%;
+
+}
+.tukhoa{
+    border: 1px solid rgb(38, 186,38) ;
+    background-color: #fff;
+    width: 1024px;
+    margin-left: 250px;
+    padding: 20px;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+    <link href="img/icon.png" rel="shortcut icon">
+    <title>Tin Tức</title>
+</head>
+<body>
+  <header>
+    <div class="topbar hidden-sm hidden-xs">
+        <div class="container">
+            <p  class="welcome-msg">Khuyến mãi cực lớn nhân dịp Năm Mới 2023. (Từ ngày 01/12 đến hết 02/02)</p>
+        </div>
+    </div>
+    <div class="container-fluid header_fluid">
+        <div class="row">
+            <div class="col-sm-2 logo">
+                <img src="img/logo.png" class="animation"  width="290px" height="160px">
+            </div>
+            <div class="col-sm-10 ">
+                <div>
+                    <form action="timkiem.html" name="frm-search" method="get" class="timkiem">
+                        <input type="text" placeholder="Nội Dung Tìm kiếm" class="seach" name="words" onkeypress="checkKeySearch(e)">
+                        <button type="button" class="nuttimkiem"><i class="fa-solid fa-magnifying-glass se" onclick="doSearch()"></i></button>
+                        <img src="img/user.webp" alt="" width="20px", height="28px" class="user" />
+                         <a class="signin" href="dangnhap.html">Đăng nhập</a> 
+                         <a class="reg" href="dangky.html">Đăng ký</a> 
+                         <a class="giohang" href="donhang.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                    </form>
+                </div>
+                <div class="nav-header">
+                    <nav class="navbar navbar-expand-sm">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse mynavbar " >
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="trangchu.html">Trang Chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="tintuc.html">Tin Tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sanpham.html">Sản Phẩm</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="container mt-3 baoquat">
+            <div class="tintuc">TIN TỨC</div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://tuoitre.vn/vua-cay-giong-co-do-40-ti-dong-20180222144640642.htm"><img class="avt" src="img/tintuc1.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a  href="https://tuoitre.vn/vua-cay-giong-co-do-40-ti-dong-20180222144640642.htm"><h3>Vua cây trồng cơ đồ 40 tỉ đồng</h3></a>
+                    Sau 35 năm tìm tòi, khảo nghiệm và nghiên cứu, nông dân Nguyễn Trí Nghiệp (65 tuổi, trú cù lao Minh, xã Hòa Ninh, huyện Long Hồ, Vĩnh Long) 
+                    có trong tay một cơ đồ cây giống chất lượng cao trị giá gần 40 tỉ đồng.
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://tuoitre.vn/khong-co-giong-moi-ra-lo-tu-dai-hoc-trong-suot-10-nam-20170914175518688.htm"><img class="avt" src="img/tintuc2.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a  href="https://tuoitre.vn/khong-co-giong-moi-ra-lo-tu-dai-hoc-trong-suot-10-nam-20170914175518688.htm"><h3>Giáo sư nhiều nhưng vì sao cứ phải nhập lắm giống</h3></a>
+                    Suốt 10 năm trời các trường đại học không cho ra đời bất kỳ 
+                    giống nào mới trong khi đó Việt Nam mỗi năm phải nhập rất nhiều giống.
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://tuoitre.vn/nong-nghiep-cong-nghe-cao-da-latsut-dau-me-tran-vi-giong-661621.htm"><img class="avt" src="img/tintuc3.png" width="100%" alt=""> </a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a href="https://tuoitre.vn/nong-nghiep-cong-nghe-cao-da-latsut-dau-me-tran-vi-giong-661621.htm"><h3>Nông nghiệp công nghệ cao Đà Lạt “sứt đầu mẻ trán” vì giống</h3></a>
+                 Sau mười năm triển khai sản xuất nông nghiệp ứng dụng công nghệ cao, giống và
+                    công nghệ vẫn là điều nhiều nông dân Đà Lạt phải tự tìm đường bước qua vạch xuất phát.
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://tuoitre.vn/my-bat-ba-nguoi-trung-quoc-an-cap-hat-giong-585461.htm"><img class="avt" src="img/tintuc4.png" width="100%" alt="">   </a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark nd" >
+                    <a href="https://tuoitre.vn/my-bat-ba-nguoi-trung-quoc-an-cap-hat-giong-585461.htm"><h3>Mỹ bắt ba người Trung Quốc ăn cắp hạt giống</h3></a>
+                        Cục điều tra liên bang Mỹ (FBI) đã bắt giữ ba người quốc tịch Trung Quốc, trong đó 
+                        có hai nhà khoa học, với cáo buộc ăn cắp kỹ thuật giống cây trồng và bí mật thương mại của Mỹ.
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://tuoitre.vn/hat-giong-rau-nhap-khau-chiem-80-468952.htm"><img class="avt" src="img/tintuc5.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a href="https://tuoitre.vn/hat-giong-rau-nhap-khau-chiem-80-468952.htm"><h3>Hạt giống rau nhập khẩu chiếm 80%</h3></a>
+                    Hiện mỗi năm VN đang phải bỏ ra hàng trăm triệu USD để nhập khẩu các 
+                    loại hạt giống rau về trồng. Trong đó có những loại giống trong nước hoàn toàn có thể sản xuất được như cà chua, dưa leo, khổ qua...
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://vnexpress.net/hang-tram-con-trau-noi-duoi-nhau-boi-qua-song-4272114.html"><img class="avt" src="img/tintuc6.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a href="https://vnexpress.net/hang-tram-con-trau-noi-duoi-nhau-boi-qua-song-4272114.html"><h3>Hàng trăm con trâu nối đuôi nhau bơi ra sông</h3></a>
+                    Vào mùa chăn thả hàng năm, những đàn trâu ở làng Fanggou, tỉnh Tứ Xuyên, phải bơi qua
+                    sông Gia Lăng để sang bờ bên kia gặm cỏ. 
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://video.vnexpress.net/tin-tuc/nhip-song/trai-gia-cam-vuon-rau-xanh-muot-cua-linh-bien-phong-4271509.html"><img class="avt" src="img/tintuc7.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a href="https://video.vnexpress.net/tin-tuc/nhip-song/trai-gia-cam-vuon-rau-xanh-muot-cua-linh-bien-phong-4271509.html"><h3>Trại gia cầm, vườn rau xanh mướt của lính biên phòng</h3></a>
+                    Đồn biên phòng Ra Mai, ở Minh Hóa, xây dựng trang trại nuôi gia súc gia cầm, trồng rau phục vụ đơn vị, 
+                    được nhiều người dân đến tham quan, học tập. 
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://vnexpress.net/thoi-su/phong-benh-cho-vat-nuoi-giai-doan-giao-mua-3989403.html"><img class="avt" src="img/tintuc8.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a href="https://vnexpress.net/thoi-su/phong-benh-cho-vat-nuoi-giai-doan-giao-mua-3989403.html"><h3>Phòng bệnh cho vật nuôi giai đoạn giao mùa</h3></a>
+                    Theo PGS.TS Lê Văn Năm, Viện nghiên cứu chăn nuôi quốc gia, bà con cần trang bị 
+                    kỹ thuật phòng bệnh cho vật nuôi khi giao mùa.
+                  </div>
+                </div>
+              </div>
+              <div class="container last">
+                <div class="row demuc">  
+                  <div class="col-sm-3 col-md-3 ">
+                     <a href="https://vnexpress.net/giam-sat-gia-suc-bang-cong-nghe-4-0-3782231.html#vn_source=Tag&vn_campaign=Stream&vn_medium=Item-21&vn_term=Desktop&vn_thumb=1&vn_aid=143442&vn_aid=143442"><img class="avt" src="img/tintuc9.png" width="100%" alt=""></a>
+                  </div>
+                  <div class="col-sm-9 col-md-9 bg-light text-dark">
+                    <a href="https://vnexpress.net/giam-sat-gia-suc-bang-cong-nghe-4-0-3782231.html#vn_source=Tag&vn_campaign=Stream&vn_medium=Item-21&vn_term=Desktop&vn_thumb=1&vn_aid=143442&vn_aid=143442"><h3>Giám sát gia súc bằng công nghệ 4.0</h3></a>
+                    Với các cảm biến trên vòng cổ và tai nghe, người dùng có thể theo dõi sinh trắc học của gia súc qua điện thoại.
+                  </div>
+                </div>
+              </div>   
+            </div>       
+    </main>
+    <footer class="text-center text-lg-start bg-dark text-muted wow">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+              <p class="p-footer">GREEN FARMER</p>
+          </div>
+          <!-- Left -->
+          <div class="text-decoration-non">
+              <a href="#" class="me-4 text-reset ">
+                  <i class="fab fa-facebook-f footer-item"></i>
+              </a>
+              <a href="#" class="me-4 text-reset">
+                  <i class="fab fa-twitter footer-item"></i>
+              </a>
+              <a href="#" class="me-4 text-reset">
+                  <i class="fab fa-google footer-item"></i>
+              </a>
+              <a href="#" class="me-4 text-reset">
+                  <i class="fab fa-instagram footer-item"></i>
+              </a>
+              <a href="#" class="me-4 text-reset">
+                  <i class="fab fa-linkedin footer-item"></i>
+              </a>
+              <a href="#" class="me-4 text-reset">
+                  <i class="fab fa-github footer-item"></i>
+              </a>
+          </div>
+          <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+      <!-- Section: Links  -->
+      <section>
+          <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                      <!-- Content -->
+                      <h3>GIỐNG CÂY TRỒNG-VẬT NUÔI</h3>
+                      <h4>Chất lượng hàng đầu Việt Nam</h4>
+                      <a href="trangchu.html" class=" text-reset d-flex  mb-2 mb-lg-0 text-white  logo-footer">
+                        <img src="img/logo.png" alt="" >
+                      </a>
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-non">
+                      <!-- Links -->
+                      <h4 class="text-uppercase fw-bold mb-4">
+                          Sản phẩm
+                      </h4>
+                      <p class="footer-item">
+                          <a href="sanpham.html" class="text-reset">Chất lượng</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="sanpham.html" class="text-reset">An toàn</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="sanpham.html" class="text-reset">Sạch sẽ</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="sanpham.html" class="text-reset">Giống tốt</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="sanpham.html" class="text-reset">Giá rẻ</a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->  
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-non">
+                      <!-- Links -->
+                      <h4 class="text-uppercase fw-bold mb-4">
+                          Chi nhánh
+                      </h4>
+                      <p class="footer-item">
+                          <a href="#!" class="text-reset">Cần Thơ</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="#!" class="text-reset">Tp. Hồ Chí Minh</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="#!" class="text-reset">Hà Nội</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="#!" class="text-reset">Đà Nẵng</a>
+                      </p>
+                  </div>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 mb-md-0 text-decoration-non">
+                      <!-- Links -->
+                      <h4 class="text-uppercase fw-bold mb-4">
+                          Địa Chỉ liên hệ
+                      </h4>
+                      <p class="footer-item">
+                          <a href="lienhe.html" class="text-reset"><i class="fas fa-home me-3"></i>Ấp Hoà Đức,xã Hoà An, huyện Phụng Hiệp, tỉnh Hậu Giang</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="lienhe.html" class="text-reset"><i class="fas fa-envelope me-3"></i>gctvvn@gmail.com.vn</a>
+                      </p>
+                      <p class="footer-item">
+                          <a href="lienhe.html" class="text-reset"><i class="fas fa-phone me-3"></i>Hotline: 0971831100.</a>
+                      </p>
+                  </div>        
+              </div>
+              <!-- Grid row -->
+          </div>
+      </section>
+      <!-- Section: Links  -->
+      <!-- Copyright --> 
+      <div class="text-center  p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold " href="#">Group11.com</a>
+      </div>
+      <div id="backtop">  
+       <i class="fa-solid fa-arrow-up" ></i>      
+      </div>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/backtop.js"></script>
+  </body>
+</html>

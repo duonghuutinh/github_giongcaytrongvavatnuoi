@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link href="img/icon.png" rel="shortcut icon">
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <header>
+        <div class="topbar hidden-sm hidden-xs">
+            <div class="container">
+                <p  class="welcome-msg">Khuyến mãi cực lớn nhân dịp Năm Mới 2023. (Từ ngày 01/12 đến hết 02/02)</p>
+            </div>
+        </div>
+        <div class="container-fluid header_fluid">
+            <div class="row">
+                <div class="col-sm-2 logo">
+                    <img src="img/logo.png" class="animation"  width="290px" height="160px">
+                </div>
+                <div class="col-sm-10 ">
+                    <div>
+                        <form action="timkiem.html" name="frm-search" method="get" class="timkiem">
+                            <input type="text" placeholder="Nội Dung Tìm kiếm" class="seach" name="words" onkeypress="checkKeySearch(e)">
+                            <button type="button" class="nuttimkiem"><i class="fa-solid fa-magnifying-glass se" onclick="doSearch()"></i></button>
+                            <img src="img/user.webp" alt="" width="20px", height="28px" class="user" />
+                             <a class="signin" href="dangnhap.html">Đăng nhập</a> 
+                             <a class="reg" href="dangky.html">Đăng ký</a> 
+                             <a class="giohang" href="donhang.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                        </form>
+                    </div>
+                    <div class="nav-header">
+                        <nav class="navbar navbar-expand-sm">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse mynavbar " >
+                                    <ul class="navbar-nav me-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="trangchu.html">Trang Chủ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="tintuc.html">Tin Tức</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="sanpham.html">Sản Phẩm</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Carousel -->
+        <div class="container truot "> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" style="width:100%;">
+                <div class="item active">
+                  <img src="img/truot1.jpg" alt="#" style="width:100%;">
+                </div>
+        
+                <div class="item">
+                  <img src="img/truot2.jpg" alt="#" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="img/truot3.jpg" alt="#" style="width:100%;">
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+
+        <section class="features" id="features">
+            <h1 class="heading"> Giao Hàng <span>Tiết Kiệm</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img id="hinh1" src="img/hinh1.png" alt="" >
+                    <h3>Giờ Làm Việc</h3>
+                    <p>T2-T7 Giờ Hành Chính</p>
+                    <a href="https://giaohangtietkiem.vn" class="btn">Xem Chi Tiết</a>
+                </div>
+                <div class="box">
+                    <img id="hinh2" src="img/hinh2.jpg" alt="">
+                    <h3>Miến Phí Vận Chuyển</h3>
+                    <p>Bán Kính 100km</p>
+                    <a href="https://giaohangtietkiem.vn" class="btn">Xem Chi Tiết</a>
+                </div>
+                <div class="box">
+                    <img id="hinh3" src="img/hinh3.png" alt="">
+                    <h3>Hỗ Trợ 24/7</h3>
+                    <p>Hotline: 0971831109</p>
+                    <a href="https://giaohangtietkiem.vn" class="btn">Xem Chi Tiết</a>
+                </div>
+                
+            </div>
+            <div class="trangtri1">
+                <img src="img/trangtri1.png" alt="" width="100%" height="400px">
+            </div>
+    
+           </section>
+           <section class="features" id="features">
+            <h1 class="heading">Sản Phẩm <span>Giống Cây Trồng</span></h1> 
+            <div class="box-container">
+                    <div class="box">
+                        <img src="img/Picture1.png" alt="">
+                        <h3>Xoài Đài Loan</h3>
+                        <div class="price">80.000 VND/Cây</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                                <input id="sp001" type="number" min="0" max="500" size="3" id="sp001" value="0" onKeyDown="return false"/> </h5>
+                            <a href="chitietsp-css+js+img/sp1.html" class="btn">Xem Chi Tiết</a> <button class="btn  dathang" onclick="addCart('sp001')">Đặt Hàng Ngay</button>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <img src="img/Picture2.png" alt="">
+                        <h3>Ổi Nữ Hoàng</h3>
+                        <div class="price"> 15.000 VND/Cây </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3" id="sp002" value="0" onKeyDown="return false"/></h5>
+                            <a href="chitietsp-css+js+img/sp2.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp002')">Đặt Hàng Ngay</button>
+                        </span>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/Picture3.png" alt="">
+                        <h3>Cam Sành</h3>
+                        <div class="price">30.000 VND/Cây</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp003" value="0" onKeyDown="return false" /></h5>
+                            <a href="chitietsp-css+js+img/sp3.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp003')">Đặt Hàng Ngay</button>
+                        </span>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/Picture4.png" alt="">
+                        <h3>Sầu Riêng Ri6</h3>
+                        <div class="price"> 110.000 VND/Cây </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp004" value="0" onKeyDown="return false"/></h5>
+                            <a href="chitietsp-css+js+img/sp4.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp004')">Đặt Hàng Ngay</button>
+                        </span>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/Picture5.png" alt="">
+                        <h3>Mít Thái</h3>
+                        <div class="price"> 40.000 VND/Cây </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp005" value="0" onKeyDown="return false" /></h5>
+                            <a href="chitietsp-css+js+img/sp5.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp005')">Đặt Hàng Ngay</button>
+                        </span>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/Picture6.png" alt="">
+                        <h3>Bưởi Da Xanh</h3>
+                        <div class="price"> 50.000 VND/Cây </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp006" value="0" onKeyDown="return false" /></h5>
+                            <a href="chitietsp-css+js+img/sp6.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp006')">Đặt Hàng Ngay</button>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h1 class="heading">Sản Phẩm <span>Giống Vật Nuôi</span></h1>   
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/Picture7.png" alt="">
+                    <h3>Gà Mía</h3>
+                    <div class="price">12.000 VND/Con</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp007" value="0" onKeyDown="return false"/></h5>
+                            <a href="chitietsp-css+js+img/sp7.html" class="btn">Xem Chi Tiết</a> <button class="btn dathang"  onclick="addCart('sp007')">Đặt Hàng Ngay</button>
+                        </span>
+                </div>
+                <div class="box">
+                    <img src="img/Picture8.png" alt="">
+                    <h3>Vịt Bầu Cánh Trắng</h3>
+                    <div class="price"> 12.000 VND/Con </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp008" value="0" onKeyDown="return false"/></h5>
+                            <a href="chitietsp-css+js+img/sp8.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp008')">Đặt Hàng Ngay</button>
+                        </span>
+                </div>
+
+                <div class="box">
+                    <img src="img/Picture9.png" alt="">
+                    <h3>Cá Diêu Hồng(Giống Lớn)</h3>
+                    <div class="price"> 42.000 VND/Kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp009" value="0" onKeyDown="return false" /></h5>
+                            <a href="chitietsp-css+js+img/sp9.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp009')">Đặt Hàng Ngay</button>
+                        </span>
+                </div>
+
+                <div class="box">
+                    <img src="img/Picture10.png" alt="">
+                    <h3>Ba Ba</h3>
+                    <div class="price"> 10.000 VND/Con </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp010" value="0" onKeyDown="return false"/></h5>
+                            <a href="chitietsp-css+js+img/sp10.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang"  onclick="addCart('sp010')">Đặt Hàng Ngay</button>
+                        </span>
+                </div>
+
+                <div class="box">
+                    <img src="img/Picture11.png" alt="">
+                    <h3>Cá Thác Lác</h3>
+                    <div class="price">3.500 VND/Con</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>
+                        <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                        <input type="number" min="0" value="0" max="500" size="3"  id="sp011" value="0" onKeyDown="return false"/></h5>
+                        <a href="chitietsp-css+js+img/sp11.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang" onclick="addCart('sp011')">Đặt Hàng Ngay</button>
+                    </span>
+                </div>
+
+                <div class="box">
+                    <img src="img/Picture12.png" alt="">
+                    <h3>Cá Tra</h3>
+                    <div class="price"> 8.000 VND/Kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                        <span>
+                            <h5 style="font-size:14px ; padding-left: 30px;">Số Lượng:  
+                            <input type="number" min="0" value="0" max="500" size="3"  id="sp012" value="0" onKeyDown="return false" /></h5>
+                            <a href="chitietsp-css+js+img/sp12.html" class="btn">Xem Chi Tiết</a>  <button class="btn dathang" onclick="addCart('sp012')">Đặt Hàng Ngay</button>
+                        </span>
+                </div>
+            </div>
+        </div>
+        </section>
+            <div class="trangtri">
+                <p class="sale"> Giá giảm cực sốc cho các mặt hàng từ 500.000-1.000.000VNĐ.<br>
+               (Áp dụng từ ngày 01/12 đến hết 02/02) </p>
+           </div>
+           
+        <section class="features danhgia " id="features" >
+                <h1 class="heading">Đánh Giá <span>Sản Phẩm</span> </h1>
+                <div class="box-container">
+                    <div class="box">
+                        <img  src="img/danhgia1.jpg" alt="" style="width: 180px;  height: 180px;">
+                        <h3>Trương Hoàng Đức</h3>
+                        <div class="stars"> Đánh Giá:
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>              
+                        </div>
+                        <p>Tôi đã mua cây giống ở Green Farmer rất nhiều lần giao hàng nhanh, sản phẩm chất lượng, giá cả hợp lí.Tôi sẽ tiếp tục ủng hộ các bạn. </p>         
+                    </div>
+        
+                    <div class="box">
+                        <img src="img/danhgia2.jpg" alt="" style="width: 180px;  height: 180px;">
+                        <h3>Bùi Nguyễn Bảo Trân</h3>
+                        <div class="stars"> Đánh Giá:
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p> Lần đầu mua thử ở Green Farmer đội ngũ tư vấn nhiệt tình và thân thiện,cây chuẩn giống và vẫn còn tươi nguyên khi nhận hàng , cây phát triển tốt. </p>      
+                    </div>
+        
+                    <div class="box">
+                        <img  src="img/danhgia3.jpg" alt="" style="width: 180px;  height: 180px;">
+                        <h3>Trần Quang Nghĩa</h3>
+                        <div class="stars"> Đánh Giá:
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p> Mình là người khá kỹ tính trong việc mua hàng, mà shop này lại làm mình vui vẻ khi mua hàng thì là một thành công lớn của shop này rồi đấy. </p>      
+                    </div>
+                </div>
+               </section>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start bg-dark text-muted wow">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <p class="p-footer">GREEN FARMER</p>
+            </div>
+            <!-- Left -->
+            <div class="text-decoration-non">
+                <a href="#" class="me-4 text-reset ">
+                    <i class="fab fa-facebook-f footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github footer-item"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h3>GIỐNG CÂY TRỒNG-VẬT NUÔI</h3>
+                        <h4>Chất lượng hàng đầu Việt Nam</h4>
+                        <a href="trangchu.html" class=" text-reset d-flex  mb-2 mb-lg-0 text-white  logo-footer">
+                          <img src="img/logo.png" alt="" >
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-non">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Sản phẩm
+                        </h4>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Chất lượng</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">An toàn</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Sạch sẽ</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Giống tốt</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Giá rẻ</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->  
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-non">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Chi nhánh
+                        </h4>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Cần Thơ</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Tp. Hồ Chí Minh</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Hà Nội</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Đà Nẵng</a>
+                        </p>
+                    </div>
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 mb-md-0 text-decoration-non">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Địa Chỉ liên hệ
+                        </h4>
+                        <p class="footer-item">
+                            <a href="lienhe.html" class="text-reset"><i class="fas fa-home me-3"></i>Ấp Hoà Đức,xã Hoà An, huyện Phụng Hiệp, tỉnh Hậu Giang</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="lienhe.html" class="text-reset"><i class="fas fa-envelope me-3"></i>gctvvn@gmail.com.vn</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="lienhe.html" class="text-reset"><i class="fas fa-phone me-3"></i>Hotline: 0971831100.</a>
+                        </p>
+                    </div>        
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright --> 
+        <div class="text-center  p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold " href="#">Group11.com</a>
+        </div>
+        <div id="backtop">  
+         <i class="fa-solid fa-arrow-up" ></i>      
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/backtop.js"></script>
+    <script src="./js/giohang.js"></script>
+</body>
+</html>

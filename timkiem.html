@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="img/icon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/timkiem.css">
+    <title>Tìm Kiếm</title>
+    <script>
+        window.onload=function(){showSearch();};
+        </script>
+</head>
+<body>
+    <header>
+        <div class="topbar hidden-sm hidden-xs">
+            <div class="container">
+                <p  class="welcome-msg">Khuyến mãi cực lớn nhân dịp Năm Mới 2023. (Từ ngày 01/12 đến hết 02/02)</p>
+            </div>
+        </div>
+        <div class="container-fluid header_fluid">
+            <div class="row">
+                <div class="col-sm-2 logo">
+                    <img src="img/logo.png" class="animation"  width="290px" height="160px">
+                </div>
+                <div class="col-sm-10 ">
+                    <div>
+                        <form action="timkiem.html" name="frm-search" method="get" class="timkiem">
+                            <input type="text" placeholder="Nội Dung Tìm kiếm" class="seach" name="words" onkeypress="checkKeySearch(e)">
+                            <button type="button" class="nuttimkiem"><i class="fa-solid fa-magnifying-glass se" onclick="doSearch()"></i></button>
+                            <img src="img/user.webp" alt="" width="20px", height="28px" class="user" />
+                             <a class="signin" href="dangnhap.html">Đăng nhập</a> 
+                             <a class="reg" href="dangky.html">Đăng ký</a> 
+                             <a class="giohang" href="donhang.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                        </form>
+                    </div>
+                    <div class="nav-header">
+                        <nav class="navbar navbar-expand-sm">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse mynavbar " >
+                                    <ul class="navbar-nav me-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="trangchu.html">Trang Chủ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="tintuc.html">Tin Tức</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="sanpham.html">Sản Phẩm</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <main class="one-col">
+		<article class="main-content">			
+			<div id="searchDetail"></div>			
+		</article>						
+	</main>
+    <footer class="text-center text-lg-start bg-dark text-muted wow">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <p class="p-footer">GREEN FARMER</p>
+            </div>
+            <!-- Left -->
+            <div class="text-decoration-non">
+                <a href="#" class="me-4 text-reset ">
+                    <i class="fab fa-facebook-f footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin footer-item"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github footer-item"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h3>GIỐNG CÂY TRỒNG-VẬT NUÔI</h3>
+                        <h4>Chất lượng hàng đầu Việt Nam</h4>
+                        <a href="trangchu.html" class=" text-reset d-flex  mb-2 mb-lg-0 text-white  logo-footer">
+                          <img src="img/logo.png" alt="" >
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-non">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Sản phẩm
+                        </h4>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Chất lượng</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">An toàn</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Sạch sẽ</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Giống tốt</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="sanpham.html" class="text-reset">Giá rẻ</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->  
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-non">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Chi nhánh
+                        </h4>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Cần Thơ</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Tp. Hồ Chí Minh</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Hà Nội</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="#!" class="text-reset">Đà Nẵng</a>
+                        </p>
+                    </div>
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 mb-md-0 text-decoration-non">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Địa Chỉ liên hệ
+                        </h4>
+                        <p class="footer-item">
+                            <a href="lienhe.html" class="text-reset"><i class="fas fa-home me-3"></i>Ấp Hoà Đức,xã Hoà An, huyện Phụng Hiệp, tỉnh Hậu Giang</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="lienhe.html" class="text-reset"><i class="fas fa-envelope me-3"></i>gctvvn@gmail.com.vn</a>
+                        </p>
+                        <p class="footer-item">
+                            <a href="lienhe.html" class="text-reset"><i class="fas fa-phone me-3"></i>Hotline: 0971831100.</a>
+                        </p>
+                    </div>        
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright --> 
+        <div class="text-center  p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold " href="#">Group11.com</a>
+        </div>
+        <div id="backtop">  
+         <i class="fa-solid fa-arrow-up" ></i>      
+        </div>
+    </footer>
+       <script src="js/timkiem.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/backtop.js"></script>
+</body>
+</html>

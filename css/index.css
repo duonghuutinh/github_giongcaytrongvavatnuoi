@@ -1,0 +1,162 @@
+html {
+    font-size: 50% ;
+}
+header {
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  width: 97%;
+  z-index: 1;  
+}
+body{
+    background: #eee;
+    padding: 0 3rem;
+}
+footer{
+    font-size: 2rem;
+}
+.topbar{
+    background-color: #80BB35; 
+    text-align: center; 
+    color: #ffffff;
+    height: 30px;
+}
+.welcome-msg{
+    font-size: 15px;
+     line-height: 32.8px;
+    
+}
+.header_fluid{ 
+    background-color: #fff;
+    height: 135px;
+    border-radius: 15px;
+}
+.logo{
+    position: relative;
+    padding-left: 120px;
+}
+.timkiem{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 120px;
+}
+.seach{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #80BB35;
+    padding-left: 38px;
+}
+.mynavbar{
+    position: absolute;;
+    padding-left: 400px;
+    margin-top: 38px;
+    font-weight: 650;
+}
+.nav-link{
+    position: relative;
+    color: black;
+    margin-right: 25px;
+}
+.nav-item :hover{
+    color:#80BB35 ;
+    font-size: 20px; 
+    text-decoration: none;
+}
+.nuttimkiem{
+    position: relative;
+    text-align: right;
+    right: 40px;
+    color:#80BB35;
+    background-color: #fff;
+    border: none;  
+}
+.user{
+    margin-left: 15px;
+}
+.signin{
+    position: absolute;
+    margin-left: 10px;
+    color: #000;
+}
+.reg {
+    position:absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #000;
+}
+.signin:hover{
+    color: red;
+    text-decoration: none;
+}
+.reg:hover{
+    color: red;
+    text-decoration: none;
+}
+.giohang{
+    position: absolute;
+    margin-left:110px;
+    margin-top:5px;
+    padding: 5px 10px ;
+    background-color:#fff;
+    border-radius: 50%;
+    border: 1px solid #80BB35;
+    color: #80BB35;
+}
+.giohang:hover{
+    color: red;
+}
+/* footer */
+.text-decoration-non a {
+    text-decoration: none;
+}
+.logo-footer img{
+    width: 100%;
+    margin-top: 20px;
+}
+.footer-item{
+    color: #000;
+    font-size: 18px;
+}
+.footer-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: rgb(38, 186,38) ;
+}
+#backtop{
+    width: 50px;
+    height: 50px;
+    background: #80BB35;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 45px;
+    right: 25px;
+}
+#backtop i {
+    padding:19px ;
+    color: #fff;
+}
+.animation {
+    animation: fade linear 2s;
+}
+@keyframes fade {
+    from {
+        width: 0px; height: 0px;
+    }
+    to {
+        width:290px; height:160px;
+    }
+} 
+.wow{
+    background-image: url(../img/footer2.jpg);
+    height: 567px;
+    background-size: cover;
+    background-position: -10px;
+    background-attachment: fixed;
+    border-radius: 15px;
+}
+   

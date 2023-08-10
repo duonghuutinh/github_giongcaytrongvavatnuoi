@@ -1,0 +1,95 @@
+
+.login{ 
+    margin-top: 200px;
+    margin-bottom: 40px;
+    margin-left: 34%;
+    width: 500px;
+    height: 400px;
+    background:#fff;
+    padding: 30px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(38, 186,38);
+}
+.login .title{
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 2%;
+    background:rgb(38, 186,38) ;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    margin: 20px ;
+    margin-left: 28%;
+    padding-top: 5px;
+}
+.login form .user-details{
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+form .user-details .input-box{
+    width: calc(80%);
+}
+.user-details .input-box #username{
+    display: block;
+    font-weight: 200px;
+    margin-bottom: 10px;
+}
+.user-details .input-box #password{
+    display: block;
+    font-weight: 200px;
+    margin-bottom: 8px;
+    
+}
+.user-details .input-box input{
+    margin: 4px;
+    height: 30px;
+    width: 122%;
+    border-radius: 8px;
+    border: 2px solid rgb(38, 186,38);
+}
+.tk{
+    font-size: 19px;
+    font-weight: 500;
+}
+.mk{
+    font-size: 19px;
+    font-weight: 500;
+}
+.login a{
+    
+    margin-right: 2%;
+    padding-top: 5px;
+}
+.login .check {
+    margin: 10px 0 8px 0;
+    margin-left: 5%;
+}
+.submit{
+    margin-left: 260px;
+    color:#fff;
+    background:rgb(38, 186,38);
+    border-radius: 5px;
+    border: 2px solid rgb(38, 186,38);
+}
+.reset{
+    color:#fff;
+    border-radius: 5px;
+    background:rgb(38, 186,38);
+    border: 2px solid rgb(38, 186,38);
+}
+.quenmk{
+    padding: 10px;
+}
+.quenmk :hover{
+    color: red;
+}
+.submit:hover{
+    background-color: #166FE5;
+}
+.reset:hover{
+    background-color: red;
+}

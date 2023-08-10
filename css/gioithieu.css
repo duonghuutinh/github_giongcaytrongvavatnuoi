@@ -1,0 +1,50 @@
+.demuc{
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 2%;
+    background:rgb(38, 186,38) ;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left: 43%;
+    padding-top: 5px;
+}
+.demuc1{
+    line-height: 38px;
+    font-size: 20px;
+    font-weight: 2%;
+    background:rgb(38, 186,38) ;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+}
+.underline{
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.cauchot  {
+    text-align: center;
+    color:#80BB35 ;
+    padding-bottom: 20px;
+}
+.intro-nd{
+    font-style: italic;
+   margin-left: 20px;
+    background-image: url(../img/intro1.jpg);
+    width:  100%;
+    height: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding-top: 10px;
+    padding-left: 780px;
+    background-repeat:no-repeat;
+}

@@ -1,0 +1,111 @@
+.nd{
+    margin-top :200px ;
+    margin-bottom: 40px;
+    max-width: 600px;
+    width: auto;
+    background:#fff;
+    padding: 20px 10px 0px 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(38, 186,38);
+}
+.nd .title{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 30%;
+    background:rgb(38, 186,38) ;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    color:#fff;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    margin-left: 190px;
+    padding: 5px;
+}
+.nd  form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0px 50px 0px;
+    margin-right: 50px;
+}
+
+form .user-details .input-box{
+    margin: 4px;
+    width: calc(100%);
+}
+.user-details .input-box .details{
+    margin-bottom: 8px;
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+.email {
+    font-size: 19px;
+    font-weight: 500;
+}
+.hoten{
+    font-size: 19px;
+    font-weight: 500;
+}
+.pw{
+    font-size: 19px;
+    font-weight: 500;
+}
+.nlpw{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.user-details .input-box input{
+    margin-left: 150px;
+    height: 30px;
+    width: 50%;
+    border-radius: 4px;
+    border: 2px solid rgb(38, 186,38);
+}
+.user-details .sdt  input{
+    margin-left: 200px;;
+}
+.user-details .gopy  textarea{
+    margin-left: 185px;
+    width: 260px;
+    border-radius: 4px;
+    border: 2px solid rgb(38, 186,38);
+}
+.user-details .email1  input{
+    margin-left: 190px;
+}
+.user-details .mk  input{
+    margin-left: 152px;
+}
+
+.user-details .nlmk  input{
+    margin-left: 70px;
+}
+.submit{
+	height: 30px;
+	width: 60px;
+    margin: 7px;
+    margin-left: 450px;
+    color:#fff;
+    background:rgb(38, 186,38);
+    border-radius: 5px;
+    border: 2px solid rgb(38, 186,38);
+}
+.submit:hover{
+    background-color: #166FE5;
+}
+
+span{
+    position: relative;
+    left: 50px;
+   
+}
+.me-30{
+color:#80BB35;
+font-size: 20px;
+}
+.ade{
+	font-size: 18px;
+}
